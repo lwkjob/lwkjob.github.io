@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 中文
-tagline: buzhichizhongwenma
+title: 杨桦很漂亮
+tagline: 是的杨桦很漂亮，就是喜欢瞎想，需要找个男人治治她，哇哈哈！！！
 ---
 {% include JB/setup %}
 
