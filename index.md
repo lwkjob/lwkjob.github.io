@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 杨桦妹子不要烦躁了!
-tagline: 你很漂亮你很好！！
+title: zhongwen utf-8
+tagline: buzhichizhongwenma
 ---
 {% include JB/setup %}
 
