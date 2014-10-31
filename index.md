@@ -7,7 +7,7 @@ tagline: 是的杨桦很漂亮，就是喜欢瞎想，需要找个男人治治�
 
 Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+Complete usage and documentation available at: [野兔的博客](http://jekyllbootstrap.com)
 
 ## Update Author Attributes
 
