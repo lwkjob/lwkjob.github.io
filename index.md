@@ -1,6 +1,6 @@
 ---
 layout: page
-title: zhongwen utf-8
+title: 中文
 tagline: buzhichizhongwenma
 ---
 {% include JB/setup %}
