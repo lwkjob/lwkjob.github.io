@@ -6,7 +6,7 @@ tagline: 这是我的成长记录和总结
 {% include JB/setup %}
 
 
-Here's a sample "文章列表".
+##Here's a sample "文章列表".
 
 <ul class="posts">
   {% for post in site.posts %}
