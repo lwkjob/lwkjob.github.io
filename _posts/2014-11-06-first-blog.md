@@ -10,7 +10,7 @@ tags: [life, 文章]
 这是一个 `hello world `
 
 
-[模板地址](http://havee.me/ "用的这个模板")
+谢谢这位[大神](http://havee.me/ "谢谢"),制作了这个模板，灰常喜欢！[模板github地址](https://github.com/Ihavee/ihavee.github.io "模板地址")
 
 想了好久想写网络笔记，今天终于开始第一步了，(前后一年了)
 
