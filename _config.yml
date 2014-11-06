@@ -1,2 +1,48 @@
-markdown: rdiscount
-pygments: true
+# Site settings
+title: "Jekyll template demo"
+description: "jekyll template demo."
+keywords: "jekyll, template, demo"
+baseurl: ""
+url: "http:////lwkjob.github.io"
+highlighter: pygments
+paginate: 5
+author:
+    name: lwk
+    github: lwkjob
+    email:
+    gitcafe: 
+    twitter:
+    facebook:
+    googleplus:
+    weibo: lwkjob
+qiniudn: //havee.qiniudn.com                # //{bucket}.qiniudn.com
+atom_path: /atom.xml
+rss_path: /rss.xml
+
+# Build settings
+markdown: redcarpet
+redcarpet:
+    extensions: ["fenced_code_blocks", "tables", "highlight", "strikethrough"]
+permalink: /:categories/:year-:month/:title.html
+
+# comment
+comments:
+    duoshuo:	
+        name: lwkjob                           # short name
+        rcomments:
+            num: 10
+            avatar: 0
+            time: 0
+            title: 0
+            admin: 0
+            length: 26
+# 网站统计
+analytics:
+    baidu:
+        siteid:                             # 百度统计 js 代码后的字符串
+
+# blogroll
+blogroll: true
+brlist:
+    - text: "lwkjob's Space"
+      url : //guaimeizi.com/
