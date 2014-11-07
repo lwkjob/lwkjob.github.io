@@ -13,14 +13,18 @@ tags: [转载, os]
 2. 阮一峰[Linux 的启动流程](http://www.ruanyifeng.com/blog/2013/08/linux_boot_process.html)
 3. [Linux启动过程详解-《别怕Linux编程》之八](http://roclinux.cn/?p=1301)
 4. [Linux 操作系统启动过程 【以Ubuntu 12.04 为例】](http://blog.csdn.net/jandunlab/article/details/11899379)
+
 ## init程序的介绍
 1. [systemd (简体中文)](https://wiki.archlinux.org/index.php/systemd_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
 2. [浅析 Linux 初始化 init 系统，第 3 部分: Systemd](http://www.ibm.com/developerworks/cn/linux/1407_liuming_init3/index.html#ibm-pcon)
 3. [设计思路比Upstart更加超前的init系统--systemd](https://linuxtoy.org/archives/more-than-upstart-systemd.html)
 4. [systemd wiki百科介绍](http://zh.wikipedia.org/wiki/Systemd)
+
 ## windows启动过程
 1. [windows系统启动过程原理全面分析](http://blog.csdn.net/trypsin/article/details/4466373)
+
 ### 引用阮一峰第二篇文章下面的留言
+	
 	Anonymous 说：
 	很多东西说的不足。
 	1. 普适性缺乏
