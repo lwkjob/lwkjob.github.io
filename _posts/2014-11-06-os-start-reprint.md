@@ -26,12 +26,14 @@ tags: [转载, os]
 ### 引用阮一峰第二篇文章后面网友的留言
 	
 >      Anonymous 说：很多东西说的不足。
->1. 普适性缺乏
+   
+   1. 普适性缺乏
 >现在debian自己都在讨论要不要引入systemd，RHEL7 alpha1～3(别问为啥我能拿到alpha)/Fedora/Archlinux
 都已经完全迁移到systemd，ubuntu用自家的upstart，大概只有debian和gentoo还在用SystemV的这一套了，
 因该先将通用的内容，比如init程序，然后再说各种init程序的实现，如systemV/systemd/upstart等等
 由于init有不同的实现，所以那些进程脚本位置都有差别。
->2. 缺乏细节
+  >2. 缺乏细节
+
 >即便这篇文章不是针对Linux内核启动的代码分析级别的细致分析，也应该更多的提到bootloader。
 最误导人的是读取内核那边，明明是内核+initrd一起读取的。
 并且几乎所有非嵌入式发行版通用的initrd这个细节完全没有提到。
