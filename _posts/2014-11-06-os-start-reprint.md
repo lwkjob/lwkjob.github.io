@@ -23,19 +23,19 @@ tags: [转载, os]
 ## windows启动过程
 1. [windows系统启动过程原理全面分析](http://blog.csdn.net/trypsin/article/details/4466373)
 
-### 引用阮一峰第二篇文章下面的留言
+### 引用阮一峰第二篇文章后面网友的留言
 	
-	Anonymous 说：
-	很多东西说的不足。
-	1. 普适性缺乏
-	现在debian自己都在讨论要不要引入systemd，RHEL7 alpha1～3(别问为啥我能拿到alpha)/Fedora/Archlinux
-	都已经完全迁移到systemd，ubuntu用自家的upstart，大概只有debian和gentoo还在用SystemV的这一套了，
-	因该先将通用的内容，比如init程序，然后再说各种init程序的实现，如systemV/systemd/upstart等等
-	由于init有不同的实现，所以那些进程脚本位置都有差别。
-	2. 缺乏细节
-	即便这篇文章不是针对Linux内核启动的代码分析级别的细致分析，也应该更多的提到bootloader。
-	最误导人的是读取内核那边，明明是内核+initrd一起读取的。
-	并且几乎所有非嵌入式发行版通用的initrd这个细节完全没有提到。
-	其中提到的init程序实际上只要用了initrd都是从initrd里面起起来的。还有initrd的双rootfs等重要的排错机制没提到。
-	同样第六步提到的各种配置文件，这个一样少了很多东西。
-	比如pam_env的pam模块就会读取/etc/environment的配置文件，对于这种可以灵活配置的东西因该介绍的是如何自己去寻找读取顺序，而不是只说有哪些
+>	Anonymous 说：
+很多东西说的不足。
+1. 普适性缺乏
+现在debian自己都在讨论要不要引入systemd，RHEL7 alpha1～3(别问为啥我能拿到alpha)/Fedora/Archlinux
+都已经完全迁移到systemd，ubuntu用自家的upstart，大概只有debian和gentoo还在用SystemV的这一套了，
+因该先将通用的内容，比如init程序，然后再说各种init程序的实现，如systemV/systemd/upstart等等
+由于init有不同的实现，所以那些进程脚本位置都有差别。
+2. 缺乏细节
+即便这篇文章不是针对Linux内核启动的代码分析级别的细致分析，也应该更多的提到bootloader。
+最误导人的是读取内核那边，明明是内核+initrd一起读取的。
+并且几乎所有非嵌入式发行版通用的initrd这个细节完全没有提到。
+其中提到的init程序实际上只要用了initrd都是从initrd里面起起来的。还有initrd的双rootfs等重要的排错机制没提到。
+同样第六步提到的各种配置文件，这个一样少了很多东西。
+比如pam_env的pam模块就会读取/etc/environment的配置文件，对于这种可以灵活配置的东西因该介绍的是如何自己去寻找读取顺序，而不是只说有哪些
