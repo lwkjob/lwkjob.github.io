@@ -7,6 +7,9 @@ category: demo
 tags: [test, jekyll, welcome]
 ---
 
+##一些markdown的基本标签用法
+
+
 # 测试 h1
 
 ## 测试 h2
@@ -29,6 +32,8 @@ tags: [test, jekyll, welcome]
 
 测试行代码 `_post`
 
+    这是一个代码段
+
 测试段落代码
 
 ```ruby
@@ -38,6 +43,13 @@ int main(int argc, char **argv)
 {
         printf("Hello, World!\n");
         return 0;
+}
+```
+#java代码高亮
+```java
+/* hello world demo */
+public static void main(args[] args){
+	System.out.println("Hello lwk ");
 }
 ```
 
