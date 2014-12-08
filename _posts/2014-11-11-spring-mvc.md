@@ -6,7 +6,7 @@ keywords: ""
 category: 
 tags: [笔记]
 ---
-####spring mvc的运行流程
+####spring mvc的运行流程：
 - 首先整个M-V-C的流程都依赖于Spring容器完成对象创建(IOC)和对象依赖注入(DI),
 - 并充分利用注解减少xml配置,本着约定优于配置的原则.
 - 利用一个servlet作为中央控制器,接收客户端请求,
@@ -15,9 +15,9 @@ tags: [笔记]
 - 根据视图解析器根据相应的试图渲染结果返回给客户端.
 - 控制器根据<servletName>-servlet.xml配置选择相应的请求映射器,然后
 
-####spring mvc的优点
-####spring mvc的缺点
-####使用spring mvc
+####spring mvc的优点：
+####spring mvc的缺点：
+####使用spring mvc：
 
 1. 配置
 2. spring-mvc的注解
