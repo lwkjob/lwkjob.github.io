@@ -44,5 +44,9 @@ analytics:
 # blogroll
 blogroll: true
 brlist:
-    - text: "lwkjob's Space"
-      url : //www.guaimeizi.com/
+    - text: "酷壳-左耳朵耗子"
+      url : //coolshell.cn//
+    - text: "MacTalk-池建强"
+      url : //macshuo.com/
+    - text: "阮一峰的网络日志"
+      url : //www.ruanyifeng.com/blog/
