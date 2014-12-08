@@ -13,7 +13,7 @@ tags: [笔记]
 - 并转发到相应的控制器(controller)做实际的数据采集,数据类型转化,校验,组装成model,
 - 调用service业务逻辑,然后将处理结果封装model(map键值对类型)传给view试图,
 - 根据视图解析器根据相应的试图渲染结果返回给客户端.
-- 控制器根据<servletName>-servlet.xml配置选择相应的请求映射器,然后
+- 控制器根据`<servletName>-servlet.xml`配置选择相应的请求映射器,然后
 
 ####spring mvc的优点：
 ####spring mvc的缺点：
