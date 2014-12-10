@@ -27,6 +27,7 @@ tags: [笔记]
 - 步骤3—— 对Controller处理类（方法）调用时可能发生的异常进行处理            ——HandlerExceptionResolver
 - 步骤4—— 根据Controller处理类（方法）的调用结果，进行Http响应处理       ——ViewResolver
 - 正是这基于组件、接口的设计，支持了SpringMVC的另一个特性：行为的可扩展性。
+
 #### Spring MVC对比 Struts2：
 1. 实现机制
 - struts2框架是类级别的拦截，每次来了请求就创建一个controller中对应的Action，然后调用setter getter方法把request中的数据注入 。
@@ -38,9 +39,11 @@ tags: [笔记]
 2. Request数据共享
 - spring3mvc的方法之间基本上独立的，独享request response数据。请求数据通过参数获取，处理结果通过ModelMap交回给框架，方法之间不共享变量。
 - 而struts2搞的就比较乱，虽然方法之间也是独立的，但其所有Action变量是共享的。这不会影响程序运行，却给我们编码、读程序时带来麻烦 。
+
 #### spring mvc的缺点：
 - 项目全用注解如果事先不定好规范，后期不利于维护，配置文件可读性强，但是如果定好规范比如:
 - 控制器的包路径=请求路径=映射文件jsp路径，这样也会是一目了然了，后期维护人员找类也好找。
+
 #### 使用spring mvc：
 1. 配置
 2. spring-mvc的注解
