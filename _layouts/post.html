@@ -2,8 +2,11 @@
 layout: default
 ---
 <time class="small">{{ page.date | date: "%Y.%m.%d" }}</time>
-<h2> {{ page.title }} </h2>
-{{ content }}
+<div class="post-title"><h1> {{ page.title }}  {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1></div>
+
+<div>{{ content }}</div>
+
+<br/>
 <ul class="pager">
   {% if page.previous %}
   <li class="previous"><a  href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Prev</a></li>

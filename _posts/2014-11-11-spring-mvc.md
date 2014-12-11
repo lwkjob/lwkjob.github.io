@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "spring mvc使用总结"
-description: "spring mvc 使用流程"
+title: spring mvc使用总结
+description: spring mvc 使用流程
 keywords: ""
 category: 
 tags: [笔记]
 ---
-####spring mvc的运行流程：
+# spring mvc的运行流程：
 - MVC框架的出现是为了将URL从HTTP的世界中映射到JAVA世界中，这是MVC框架的核心功能
 - 首先整个M-V-C的流程都依赖于Spring容器完成对象创建(IOC)和对象依赖注入(DI),
 - 并充分利用注解减少xml配置,本着约定优于配置的原则.
@@ -14,10 +14,9 @@ tags: [笔记]
 - 并转发到相应的控制器(controller)做实际的数据采集,数据类型转化,校验,组装成model,
 - 调用service业务逻辑,然后将处理结果封装model(map键值对类型)传给view试图,
 - 根据视图解析器根据相应的试图渲染结果返回给客户端.
-- 控制器根据`<servletName>-servlet.xml`配置选择相应的请求映射器,然后
-<!-- more -->
+- 控制器根据`<servletName>-servlet.xml`配置选择相应的请求映射器
 
-####spring mvc的优点：
+# spring mvc的优点：
 - SpringMVC设计思路：将整个处理流程规范化，并把每一个处理步骤分派到不同的组件中进行处理。
 - 这个方案实际上涉及到两个方面：
 - 处理流程规范化 —— 将处理流程划分为若干个步骤（任务），并使用一条明确的逻辑主线将所有的步骤串联起来
@@ -29,7 +28,7 @@ tags: [笔记]
 - 步骤4—— 根据Controller处理类（方法）的调用结果，进行Http响应处理       ——ViewResolver
 - 正是这基于组件、接口的设计，支持了SpringMVC的另一个特性：行为的可扩展性。
 
-#### Spring MVC对比 Struts2：
+#  Spring MVC对比 Struts2：
 1. 实现机制
 	- struts2框架是类级别的拦截，每次来了请求就创建一个controller中对应的Action，然后调用setter getter方法把request中的数据注入 。
 	- struts2实际上是通过setter getter方法与request打交道的。struts2中，一个Action对象对应一个request上下文。
@@ -42,11 +41,11 @@ tags: [笔记]
 	- spring3mvc的方法之间基本上独立的，独享request response数据。请求数据通过参数获取，处理结果通过ModelMap交回给框架，方法之间不共享变量。
 	- 而struts2搞的就比较乱，虽然方法之间也是独立的，但其所有Action变量是共享的。这不会影响程序运行，却给我们编码、读程序时带来麻烦 。
 
-#### spring mvc的缺点：
+#  spring mvc的缺点：
 - 项目全用注解如果事先不定好规范，后期不利于维护，配置文件可读性强，但是如果定好规范比如:
 - 控制器的包路径=请求路径=映射文件jsp路径，这样也会是一目了然了，后期维护人员找类也好找。
 
-#### 使用spring mvc：
+#  使用spring mvc：
 1. 配置
 2. spring-mvc的注解
 	 - 请求控制注解
