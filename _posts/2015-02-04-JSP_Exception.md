@@ -10,7 +10,7 @@ tags: [jsp]
 ## jsp统一异常捕获
 > 实现所有jsp抛出的异常，在一个页面统一捕获
 
-1 在需要捕获异常的jsp添加一条指令`jsp <%@ page errorPage="/common/error.jsp" %>  ` 
+1 在需要捕获异常的jsp添加一条指令` <%@ page errorPage="/common/error.jsp" %>  ` 
 
 2 在error.jsp中添加 ` isErrorPage="true" `指令，然后就可以再本页使用exception内置对象了
 
