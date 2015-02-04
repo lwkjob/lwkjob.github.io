@@ -52,10 +52,12 @@ tags: [linux]
 > 在编辑cron服务时，编辑的内容有一些格式和约定，
 
 输入：
-``` shell 
+
+``` shell
 crontab -u root -e 
 ```
  进入vi编辑模式，编辑的内容一定要符合下面的格式：
+ 
  ``` shell
  */1 * * * * ls >> /tmp/ls.txt
  ```
