@@ -18,9 +18,9 @@ tags: [jsp]
 <%@ page language="java" contentType="text/html; charset=UTF-8"    pageEncoding="UTF-8"%>
 <%@ page isErrorPage="true" %><!-- 这个指令是关键 -->
 <%  
-/*拿到exception可以做自己的异常逻辑了，是直接打印或者是写文件。*/
-  String errorMessage=exception.getMessage();
-  //log.error("0001业务报错",exception);文件日子
+	/*拿到exception可以做自己的异常逻辑了，是直接打印或者是写文件。*/
+	String errorMessage=exception.getMessage();
+	//log.error("0001业务报错",exception);//用log4j记录日志
   %>
 <html>
 <head>
@@ -61,7 +61,7 @@ tags: [jsp]
 public ModelAndView handleException(Exception e, HttpServletRequest request, HttpServletResponse response) {
 
 	StringWriter sw = new StringWriter();
-	e.printStackTrace(new PrintWriter(sw, true));
+	e.printStackTrace(new PrintWriter(sw, true)); //将错误堆栈输出流转换为String
 	String errorMsg = sw.toString();
 	logger.error("[handleException]进行Controller处理时出现错误：{}", errorMsg);
 
