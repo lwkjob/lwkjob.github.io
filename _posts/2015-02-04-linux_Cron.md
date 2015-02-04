@@ -86,7 +86,7 @@ crontab -u root -e
 
 晚上11点到早上8点之间每两个小时，早上八点
 
-`0 23-7/2，8 * * * echo "Have a good dream：）" >> /tmp/test.txt`
+`0 23-7/2,8 * * * echo "Have a good dream：" >> /tmp/test.txt`
 
 每个月的4号和每个礼拜的礼拜一到礼拜三的早上11点
 
