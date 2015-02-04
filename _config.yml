@@ -1,10 +1,10 @@
 # Site settings
-title: "野兔"
+title:  "野兔很笨"
 description: "野兔的笔记."
 keywords: "spring, java, python"
 baseurl: ""
 url: "http:////www.lwkjob.com"
-highlighter: pygments
+highlighter: pygments   #代码高亮
 paginate: 5
 author:
     name: lwk
@@ -14,8 +14,8 @@ author:
     twitter:
     facebook:
     googleplus:
-    weibo: lwkjob
-qiniudn: //havee.qiniudn.com                # //{bucket}.qiniudn.com
+    weibo: 2001373983/profile?topnav=1&wvr=6
+qiniudn:                   # //{bucket}.qiniudn.com
 atom_path: /atom.xml
 rss_path: /rss.xml
 
@@ -50,5 +50,3 @@ brlist:
       url : //macshuo.com/
     - text: "阮一峰的网络日志"
       url : //www.ruanyifeng.com/blog/
-    - text: "张影-西安财经学院网络营销秀"
-      url : //www.wm23.cn/smileslj
