@@ -104,7 +104,7 @@ table tbody tr:hover {
 .wrapper {
 	border:1px solid rgba(255, 255, 255, 0.17);
 	box-shadow:0 1px 10px rgba(170,170,170,0.8);
-	background:0 1px 10px rgba(0, 0, 0, 0.8);
+	background:rgba(0, 0, 0, 0.8);
 	padding:rgba(255, 255, 255, 0.9);
 	margin:20px 0;
 }
