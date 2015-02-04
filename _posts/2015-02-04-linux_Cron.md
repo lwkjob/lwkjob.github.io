@@ -52,11 +52,13 @@ tags: [linux]
 > 在编辑cron服务时，编辑的内容有一些格式和约定，
 
 输入：
-``` shell 
+
+``` 
 crontab -u root -e 
 ```
  进入vi编辑模式，编辑的内容一定要符合下面的格式：
- ``` shell
+ 
+ ``` 
  */1 * * * * ls >> /tmp/ls.txt
  ```
 
@@ -96,8 +98,9 @@ crontab -u root -e
 
 `0 4 1 1 * command line`
 
-> 每次编辑完某个用户的cron设置后，cron自动在/var/spool/cron下生成一
-> 个与此用户同名的文件，此用户的cron信息都记录在这个文件中，
+> 每次编辑完某个用户的cron设置后，cron自动在`/var/spool/cron`下生成
+> 一个与此用户同名的文件，此用户的cron信息都记录在这个文件中，
 > 这个文件是不可以直接编辑的，只可以用`crontab -e `来编辑。
 > cron启动后每过一份钟读一次这个文件，检查是否要执行里面的命令。因此
 > 此文件修改后不需要重新启动cron服务
+
