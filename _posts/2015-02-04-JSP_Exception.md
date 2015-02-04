@@ -9,17 +9,21 @@ tags: [jsp]
 
 ## jsp统一异常捕获
 > 实现所有jsp抛出的异常，在一个页面统一捕获
+
 1 在需要捕获异常的jsp添加一条指令
-```java
-<%@ page errorPage="/common/error.jsp" %>
+
+``` java
+ <%@ page errorPage="/common/error.jsp" %>
 ```
+
 2 在error.jsp中添加 ` isErrorPage="true" `指令，然后就可以再本页使用exception内置对象了
-```java
+
+``` java
 <%@ page language="java" contentType="text/html; charset=UTF-8"    pageEncoding="UTF-8"%>
 <%@ page isErrorPage="true" %><!-- 这个指令是关键 -->
 <%  
   /*拿到exception可以做自己的异常逻辑了，是直接打印或者是写文件。*/
-	String errorMessage=exception.getMessage();
+    String errorMessage=exception.getMessage();
 	//log.error("0001业务报错",exception);文件日子
 %>
 <html>
