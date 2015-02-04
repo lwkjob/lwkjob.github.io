@@ -1,5 +1,5 @@
 # Site settings
-title: "兔子"
+title:  "兔子"
 description: "野兔的笔记."
 keywords: "spring, java, python"
 baseurl: ""
