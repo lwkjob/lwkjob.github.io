@@ -3,7 +3,7 @@ body {
 	font-size:14px;
 	line-height: 1.6;
 	letter-spacing: 0.2px;
-	color:rgba(181, 181, 181, 1);
+	color:#000;
 	background-color:rgba(181, 181, 181, 1);
 	font-family:"Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
 }
@@ -102,10 +102,10 @@ table tbody tr:hover {
 	width:65%;
 }
 .wrapper {
-	border:1px solid rgba(0,0,0,0.17);
+	border:1px solid rgba(255, 255, 255, 0.17);
 	box-shadow:0 1px 10px rgba(170,170,170,0.8);
-	background:rgba(253,253,253,0.9);
-	padding:20px 20px 20px 20px;
+	background:0 1px 10px rgba(0, 0, 0, 0.8);
+	padding:rgba(255, 255, 255, 0.9);
 	margin:20px 0;
 }
 .wrapper .small {
