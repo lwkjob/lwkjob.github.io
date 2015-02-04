@@ -12,13 +12,12 @@ tags: [jsp]
 
 1 在需要捕获异常的jsp添加一条指令
 
-` 
- <%@ page errorPage="/common/error.jsp" %>
-` 
+` <%@ page errorPage="/common/error.jsp" %>  ` 
 
 2 在error.jsp中添加 ` isErrorPage="true" `指令，然后就可以再本页使用exception内置对象了
 
-` 
+```
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"    pageEncoding="UTF-8"%>
 <%@ page isErrorPage="true" %><!-- 这个指令是关键 -->
 <%  
@@ -34,7 +33,8 @@ tags: [jsp]
 	系统异常请联系管理员:<%=errorMessage%>
 </body>
 </html>
-` 
+
+```
 
 # tomcat配置统一异常拦截
 > 如果jsp页面没有单独设置错误页，可以配置项目`web.xml`文件tomcat做统一处理
