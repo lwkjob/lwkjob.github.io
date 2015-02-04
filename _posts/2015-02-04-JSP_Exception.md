@@ -16,7 +16,7 @@ tags: [jsp]
 
 2 在error.jsp中添加 ` isErrorPage="true" `指令，然后就可以再本页使用exception内置对象了
 
-```
+``` java
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"    pageEncoding="UTF-8"%>
 <%@ page isErrorPage="true" %><!-- 这个指令是关键 -->
