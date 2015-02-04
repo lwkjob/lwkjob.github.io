@@ -53,12 +53,12 @@ tags: [linux]
 
 输入：
 
-``` shell
+``` 
 crontab -u root -e 
 ```
  进入vi编辑模式，编辑的内容一定要符合下面的格式：
  
- ``` shell
+ ``` 
  */1 * * * * ls >> /tmp/ls.txt
  ```
 
