@@ -5,7 +5,7 @@ keywords: "spring, java, python"
 baseurl: ""
 url: "http:////www.lwkjob.com"
 highlighter: pygments   #代码高亮
-    line_number: true
+    line_number: false
 paginate: 5
 author:
     name: lwk
