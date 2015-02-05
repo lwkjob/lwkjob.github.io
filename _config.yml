@@ -2,9 +2,8 @@
 title:  "野兔很笨"
 description: "野兔的笔记."
 keywords: "spring, java, python"
-baseurl: ""
+baseurl: "/"
 url: "http:////www.lwkjob.com"
-highlighter: pygments   #代码高亮
 paginate: 5
 author:
     name: lwk

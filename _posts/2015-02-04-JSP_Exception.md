@@ -56,7 +56,7 @@ tags: [jsp]
 # spring mvc 统一异常拦截
 > 注解 @ExceptionHandler(Exception.class) 作统一异常管理
 
-``` java
+``` java 
 @ExceptionHandler(Exception.class)
 public ModelAndView handleException(Exception e, HttpServletRequest request, HttpServletResponse response) {
 
