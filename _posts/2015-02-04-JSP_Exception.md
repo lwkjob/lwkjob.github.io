@@ -55,8 +55,9 @@ tags: [jsp]
  
 # spring mvc 统一异常拦截
 > 注解 @ExceptionHandler(Exception.class) 作统一异常管理
-
+ 
 ``` java 
+ 
 @ExceptionHandler(Exception.class)
 public ModelAndView handleException(Exception e, HttpServletRequest request, HttpServletResponse response) {
 
@@ -75,5 +76,5 @@ public ModelAndView handleException(Exception e, HttpServletRequest request, Htt
 
 	return mav;
 }
-```
+``` 
 此方法可以放在一个抽象类里面，所有相同模块的Controller都统一公用这个异常处理
