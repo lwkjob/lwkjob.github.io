@@ -17,7 +17,6 @@ tags: [linux]
 - 错误订单定时清理
 - 可以定时执行shell脚本，脚本里面就可以做任何我们想做的事。。。
 
-1 、认识Cron
 > cron是一个linux下的定时执行工具，可以在无需人工干预的情况下运行作
 > 由于Cron 是Linux的内置服务，但它不自动起来，可以用以下的 
 > 方法启动关闭这个服务：
@@ -32,10 +31,7 @@ tags: [linux]
 > 在`/etc/rc.d/rc.local` 这个脚本的末尾加上：
 ` /sbin/service crond start`
 
-2、Cron服务
-
-1)直接用crontab命令编辑
-> cron服务提供crontab命令来设定cron服务的，参数与说明：
+> cron服务提供`crontab`命令来设定cron服务的，参数与说明：
 
 `crontab -u `//设定某个用户的cron服务，一般root用户在执行这个命令的时候需要此参数
 
