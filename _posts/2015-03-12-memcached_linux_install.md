@@ -1,4 +1,4 @@
- ---
+---
 layout: post
 title: "memcached linux 安装"
 description: " "
@@ -20,6 +20,7 @@ tags: [memcached, 缓存]
 查看系统是否带有该安装软件，如果有执行命令:
 rpm -e libevent-1.4.13-4.el6.x86_64 --nodeps（由于系统自带的版本旧，忽略依赖删除）
 2.2 安装`libevent`命令：
+
 ``` 
   tar zxvf libevent-2.0.21-stable.tar.gz
   cd libevent-2.0.21-stable
@@ -29,12 +30,14 @@ rpm -e libevent-1.4.13-4.el6.x86_64 --nodeps（由于系统自带的版本旧，
 ```
 至此libevent安装完毕；
 2.3 安装`memcached` 执行命令：
+
 ```
   tar zxvf memcached-1.4.2.tar.gz
   cd memcached-memcached-1.4.2
         ./configure --prefix=/usr/local/memcached --with-libevent=/usr/local/libevent/
 make
 make install
+
 ```
   至此memcached安装完毕；
 3. 可能存在的错误以及解决方案
@@ -65,6 +68,7 @@ make install
 打开一个终端，输入以下命令：
 `ps -ef | grep memcached`
 在服务开启的状态下，会出现如下图所示的提示：
+
 ```
 lwk     2539     1  0 Mar12 ?        00:00:00 /usr/local/memcached/bin/memcached -d -m 256 -u lwk -p 11211 -c 1024 ?P /tmp/memcached.pid
 lwk     4283  3264  0 00:57 pts/3    00:00:00 grep memcached

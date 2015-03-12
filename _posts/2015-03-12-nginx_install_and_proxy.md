@@ -1,4 +1,4 @@
- ---
+---
 layout: post
 title: "nginx linux 安装 和 反向代理配置 "
 description: " "
@@ -6,7 +6,8 @@ keywords: "nginx"
 category: nginx
 tags: [nginx]
 ---
-#安装 nginx 
+
+# 安装 nginx 
 > 依次安装 pcre-8.35.tar.gz,zlib-1.2.7.tar.gz,openssl-fips-2.0.2.tar.gz,  nginx-1.2.6.tar.gz
 
 1 安装pcre
@@ -24,6 +25,7 @@ make install
 2 安装zlib库
 
 [http://zlib.net/zlib-1.2.8.tar.gz](http://zlib.net/zlib-1.2.8.tar.gz) 下载最新的 zlib 源码包，使用下面命令下载编译和安装 zlib包：
+
 ```
 cd /usr/local/src
 
@@ -36,6 +38,7 @@ make install
 ```
 
 3 安装ssl（某些vps默认没装ssl)
+
 ```
 cd /usr/local/src
 wget http://www.openssl.org/source/openssl-1.0.1c.tar.gz
@@ -44,6 +47,7 @@ tar -zxvf openssl-1.0.1c.tar.gz
 
 >  Nginx 一般有两个版本，分别是稳定版和开发版，您可以根据您的目的来选择这两个版本的其中一个，
 > 下面是把 Nginx 安装到 /usr/local/nginx 目录下的详细步骤：
+
 ```
 cd /usr/local/src
 wget http://nginx.org/download/nginx-1.4.2.tar.gz
@@ -60,6 +64,7 @@ cd nginx-1.4.2
 
 make
 make install
+
 ```
 > --with-pcre=/usr/src/pcre-8.34 指的是pcre-8.34 的源码路径。
 > --with-zlib=/usr/src/zlib-1.2.7 指的是zlib-1.2.7 的源码路径。
