@@ -22,7 +22,7 @@ E. stax-api-1.0.1.jar
 
 F. wstx-asl-2.0.2.jar
 
-2  配置memcached.xml
+2  配置` memcached.xml ` 文件路径 ` /WEB-INF/classes/memcached.xml`
  
 {% highlight xml linenos%}
 <?xml version="1.0" encoding="UTF-8"?>  
