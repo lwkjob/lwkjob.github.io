@@ -8,7 +8,16 @@ tags: [nginx]
 ---
 
 # 安装 nginx 
-> 依次安装 pcre-8.35.tar.gz,zlib-1.2.7.tar.gz,openssl-fips-2.0.2.tar.gz,  nginx-1.2.6.tar.gz
+
+> 依次安装 
+
+> pcre-8.35.tar.gz
+
+> zlib-1.2.7.tar.gz	
+
+> openssl-fips-2.0.2.tar.gz	
+
+> nginx-1.2.6.tar.gz
 
 1 安装pcre
 [ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/](ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/) 下载最新的 PCRE 源码包，使用下面命令下载编译和安装 PCRE 包：
@@ -232,7 +241,10 @@ server{
 ``` 
 
 
-`nginx -s stop `// 停止nginx
-`nginx -s reload` // 重新加载配置文件
-`nginx -s quit` // 退出nginx
-`netstat -ntlp` // 查看是否启动
+ `nginx -s stop ` // 停止nginx
+
+ `nginx -s reload` // 重新加载配置文件
+
+ `nginx -s quit` // 退出nginx
+
+ `netstat -ntlp` // 查看是否启动
