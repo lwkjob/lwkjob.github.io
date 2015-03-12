@@ -88,7 +88,7 @@ make install
 
 > 是因为端口号的问题，在Linux中1024以下的端口号都需要root用户才能使用
 
-> 所以 你可以用root启动，或者修改配置文件`/usr/local/nginx/nginx.conf`
+> 所以 你可以用root启动，或者修改配置文件`/usr/local/nginx/nginx.conf` 将其中`listen  80;`修改为`listen  8080;`
 
 
 ```
