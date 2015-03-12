@@ -62,8 +62,7 @@ F. wstx-asl-2.0.2.jar
 package com.hl.memcached.client.test;  
   
 import java.util.ArrayList;  
-import java.util.List;  
-  
+import java.util.List;    
 import com.alisoft.xplatform.asf.cache.ICacheManager;  
 import com.alisoft.xplatform.asf.cache.IMemcachedCache;  
 import com.alisoft.xplatform.asf.cache.memcached.CacheUtil;  
