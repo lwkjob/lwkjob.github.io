@@ -7,18 +7,21 @@ category: life
 tags: [memcached, 缓存]
 ---
  
- ## Memcached安装
+## Memcached安装
+
 1  准备安装文件
 
 下载memcached与libevent的安装文件
 [http://memcached.googlecode.com/files/memcached-1.4.15.tar.gz（memcached下载地址）](http://memcached.googlecode.com/files/memcached-1.4.15.tar.gz（memcached下载地址）)
 [https://github.com/downloads/libevent/libevent/libevent-2.0.21-stable.tar.gz（libevent下载地址）](https://github.com/downloads/libevent/libevent/libevent-2.0.21-stable.tar.gz（libevent下载地址）)
+
 2 具体安装步骤
  
 2.1 由于`memcached`依赖于`libevent`，因此需要安装`libevent`。由于linux系统可能默认已经安装libevent，执行命令：
 `rpm -qa|grep libevent`
 查看系统是否带有该安装软件，如果有执行命令:
 rpm -e libevent-1.4.13-4.el6.x86_64 --nodeps（由于系统自带的版本旧，忽略依赖删除）
+
 2.2 安装`libevent`命令：
 
 ``` 
@@ -29,6 +32,7 @@ rpm -e libevent-1.4.13-4.el6.x86_64 --nodeps（由于系统自带的版本旧，
   make install
 ```
 至此libevent安装完毕；
+
 2.3 安装`memcached` 执行命令：
 
 ```
@@ -49,6 +53,7 @@ make install
 
 
 > 启动参数说明：
+
 `-d ` 选项是启动一个守护进程。
 `-u root` 表示启动memcached的用户为root。
 `-m ` 是分配给Memcache使用的内存数量，单位是MB，默认64MB。
@@ -73,6 +78,7 @@ make install
 lwk     2539     1  0 Mar12 ?        00:00:00 /usr/local/memcached/bin/memcached -d -m 256 -u lwk -p 11211 -c 1024 ?P /tmp/memcached.pid
 lwk     4283  3264  0 00:57 pts/3    00:00:00 grep memcached
 ```
+
 其中2539为memcached服务的pid
 输入一下命令终止memcached服务
 `kill -9 2539`

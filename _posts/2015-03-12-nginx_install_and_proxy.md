@@ -46,7 +46,7 @@ tar -zxvf openssl-1.0.1c.tar.gz
 ``` 
 
 >  Nginx 一般有两个版本，分别是稳定版和开发版，您可以根据您的目的来选择这两个版本的其中一个，
-> 下面是把 Nginx 安装到 /usr/local/nginx 目录下的详细步骤：
+> 下面是把 Nginx 安装到	` /usr/local/nginx `目录下的详细步骤：
 
 ```
 cd /usr/local/src
@@ -66,15 +66,21 @@ make
 make install
 
 ```
-> --with-pcre=/usr/src/pcre-8.34 指的是pcre-8.34 的源码路径。
-> --with-zlib=/usr/src/zlib-1.2.7 指的是zlib-1.2.7 的源码路径。
+> `--with-pcre=/usr/src/pcre-8.34`   指的是pcre-8.34 的源码路径。
+
+> `--with-zlib=/usr/src/zlib-1.2.7` 指的是zlib-1.2.7 的源码路径。
 
 4 启动
 > 确保系统的 80 端口没被其他程序占用，运行 ` ./usr/local/nginx/nginx ` 命令来启动 Nginx，
+
 > 如果你不是root用户 会报错
+
 > 出现问题： nginx: [emerg] bind() to 0.0.0.0:80 failed (13: Permission denied) 
+
 > 是因为端口号的问题，在Linux中1024以下的端口号都需要root用户才能使用
+
 > 所以 你可以用root启动，或者修改配置文件`/usr/local/nginx/nginx.conf`
+
 
 ```
 
@@ -226,7 +232,7 @@ server{
 ``` 
 
 
-'nginx -s stop '// 停止nginx
-'nginx -s reload' // 重新加载配置文件
-'nginx -s quit' // 退出nginx
-查看是否启动：'netstat -ntlp'
+`nginx -s stop `// 停止nginx
+`nginx -s reload` // 重新加载配置文件
+`nginx -s quit` // 退出nginx
+`netstat -ntlp` // 查看是否启动
