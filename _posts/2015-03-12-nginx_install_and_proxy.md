@@ -143,6 +143,14 @@ http {
 
         #access_log  logs/host.access.log  main;
 
+	#静态文件用nginx处理
+	location  ~* ^(/images/.*)$ {
+            root html; #静态文件目录/usr/local/nginx/html/images/ 访问路径如：<img src="/images/hello/java.jpg" >
+	    #expires定义用户浏览器缓存的时间为3天，如果静态页面不常更新，可以设置更长，这样可以节省带宽和缓解服务器的压力
+	    expires      3d;
+	}
+
+	#其他动态文件用tomcat服务器
         location / {
 	    root   html;
             index  index.html index.htm;
