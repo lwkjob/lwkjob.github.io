@@ -7,6 +7,9 @@ category: life
 tags: [memcached, 缓存]
 ---
  
+ * 目录
+{:toc}
+ 
 ## Memcached安装
 
 1  准备安装文件
