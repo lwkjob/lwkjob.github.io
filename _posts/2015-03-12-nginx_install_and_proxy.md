@@ -301,3 +301,5 @@ http {
  `nginx -s quit` // 退出nginx
 
  `netstat -ntlp` // 查看是否启动
+ 
+ # test
