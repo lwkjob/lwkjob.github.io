@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: lwkjob@gmail.com
 description: "野兔的笔记."
 keywords: "spring, java, python,李文科,志心,国际支付,收单"
-baseurl: "/"
+baseurl: ""
 url: "http://www.lwkjob.com"
 
 # SNS settings
