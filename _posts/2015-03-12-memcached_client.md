@@ -24,7 +24,7 @@ F. wstx-asl-2.0.2.jar
 
 2  配置` memcached.xml ` 文件路径 ` /WEB-INF/classes/memcached.xml`
  
-{% highlight xml linenos%}
+{% highlight xml%}
 <?xml version="1.0" encoding="UTF-8"?>  
 <memcached>  
     <!-- name 属性是程序中使用Cache的唯一标识;socketpool 属性将会关联到后面的socketpool配置; -->  
@@ -58,7 +58,7 @@ F. wstx-asl-2.0.2.jar
 {% endhighlight %}
 
 3  测试代码
-{% highlight java linenos%}
+{% highlight java%}
 package com.hl.memcached.client.test;  
   
 import java.util.ArrayList;  
