@@ -1,52 +1,103 @@
 # Site settings
 title:  "野兔很笨"
+SEOTitle: 野兔的博客 | lwkjob
+header-img: img/home-bg.jpg
+email: lwkjob@gmail.com
 description: "野兔的笔记."
-keywords: "spring, java, python"
+keywords: "spring, java, python,李文科,志心,国际支付,收单"
 baseurl: "/"
-url: "http:////www.lwkjob.com"
-paginate: 5
-author:
-    name: lwk
-    github: lwkjob
-    email: lwkjob@gmail.com
-    gitcafe: 
-    twitter:
-    facebook:
-    googleplus:
-    weibo: 2001373983/profile?topnav=1&wvr=6
-qiniudn:                   # //{bucket}.qiniudn.com
-atom_path: /atom.xml
-rss_path: /rss.xml
+url: "http://www.lwkjob.com"
+
+# SNS settings
+RSS: false
+weibo_username:     lwkjob
+zhihu_username:     lwkjob
+github_username:    lwkjob
+#twitter_username:  lwkjob
+facebook_username:  lwkjob
+# linkedin_username:  firstname-lastname-idxxxx
+
 
 # Build settings
-markdown: redcarpet
-# markdown: kramdown
-redcarpet:
-    extensions: ["fenced_code_blocks", "tables", "highlight", "strikethrough"]
-permalink: /:categories/:year-:month/:title.html
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true    # if you want to customize anchor. check out line:181 of `post.html`
 
-# comment
-comments:
-    duoshuo:	
-        name: lwkjob                           # short name
-        rcomments:
-            num: 10
-            avatar: 0
-            time: 0
-            title: 0
-            admin: 0
-            length: 26
-# 网站统计
-analytics:
-    baidu:
-        siteid:                             # 百度统计 js 代码后的字符串
 
-# blogroll
-blogroll: true
-brlist:
-    - text: "酷壳-左耳朵耗子"
-      url : //coolshell.cn//
-    - text: "MacTalk-池建强"
-      url : //macshuo.com/
-    - text: "阮一峰的网络日志"
-      url : //www.ruanyifeng.com/blog/
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM     # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+#disqus_username: _your_disqus_short_name_
+
+# Duoshuo settings
+duoshuo_username: lwkjob
+# Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: true     # set to false if you want to use Comment without Sharing
+
+
+
+
+
+# Analytics settings
+# Baidu Analytics
+# ba_track_id: [your track id]
+
+# Google Analytics
+ga_track_id: 'UA-88648048-1'            # Format: UA-xxxxxx-xx
+ga_domain: lwkjob.com
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "野兔很笨，<br>野兔起的很早,喜欢写代码"
+sidebar-avatar: /img/java_duck.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+friends: [
+    {
+        title: "酷壳-左耳朵耗子",
+        href: "http://coolshell.cn/"
+    },{
+        title: "阮一峰的网络日志",
+        href: "http://www.ruanyifeng.com/blog/"
+    },{
+        title: "MacTalk-池建强",
+        href: "http://macshuo.com/"
+    },{
+        title: "黄玄的博客",
+        href: "http://huangxuan.me/"
+    }
+]

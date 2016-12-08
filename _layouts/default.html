@@ -1,43 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
-    <div class="container">
-      {% include header.html %}
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
 
-      <article class="wrapper">
-      <div class="raw">
-        <div id="search-loader" style="display:none;text-align:center">
-          <img src="/style/img/loading.gif">
-        </div>
-        {{ content }}
-      </div>
-      </article>
+    {% include nav.html %}
 
-      {% include footer.html %}
-    </div>
+    {{ content }}
 
-    <script src="{{ ASSET_PATH }}/style/js/jquery.min.js"></script>
-    <script src="{{ ASSET_PATH }}/style/js/bootstrap.min.js"></script>
-    <script src="{{ ASSET_PATH }}/style/js/webcore.js"></script>
+    {% include footer.html %}
 
-    {% include baidu-analytics.html %}
-    {% if site.comments.duoshuo.name %}
-    <!-- duoshuo Begin -->
-    <script type="text/javascript">
-      var duoshuoQuery = {short_name:"{{ site.comments.duoshuo.name }}"};
-      (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = 'http://static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0] ||
-        document.getElementsByTagName('body')[0]).appendChild(ds);
-      })();
-    </script>
-    <!-- duoshuo End -->
-    {% endif %}
-  </body>
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
 </html>
