@@ -12,11 +12,11 @@ tags: [life, 文章]
 谢谢这位[大神](http://havee.me/ "谢谢"),制作了这个模板，灰常喜欢！[模板github地址](https://github.com/Ihavee/ihavee.github.io "模板地址")
 
 想了好久想写网络笔记，今天终于开始第一步了，(前后一年了)
-
-# 2016.12.08更新
- 修改模板 改为 [模板地址](https://github.com/Huxpro/huxpro.github.io "模板地址")
  
 1. 好吧想了好久还是"hello world"
 2. 想记一些读书笔记和工作所闻
+
+# 2016.12.08更新
+ 修改模板 改为 [模板地址](https://github.com/Huxpro/huxpro.github.io "模板地址")
 
 
