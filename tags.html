@@ -47,7 +47,7 @@ header-img: "img/tag-bg.jpg"
 				  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
 				  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
 				  </li> 
-				 <div class="post-preview">
+				<!-- <div class="post-preview">
 				    <a href="{{ post.url | prepend: site.baseurl }}">
 				        <h2 class="post-title">
                             {{ post.title }}
@@ -57,9 +57,9 @@ header-img: "img/tag-bg.jpg"
 				            {{ post.subtitle }}
 				        </h3>
 				        {% endif %}
-				    </a>
+				    </a>-->
 				    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-				</div>
+				<!-- </div>-->
 				<hr>
 				{% endfor %}
 			</div>
