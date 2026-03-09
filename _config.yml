@@ -1,91 +1,12 @@
-# The Site Configuration
-
-# Import the theme
+# Minimal Chirpy configuration
+title: "野兔很笨"
+url: "https://lwkjob.github.io"
 theme: jekyll-theme-chirpy
-
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
 lang: zh-CN
-
-# Change to your timezone › https://zones.arilyn.cc
 timezone: Asia/Shanghai
 
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# ↓ --------------------------
-
-title: 野兔很笨
-
-tagline: 野兔的笔记
-
-description: >- 
-  野兔的笔记.
-
-# Fill in the protocol & hostname for your site.
-# E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://lwkjob.github.io"
-
-github:
-  username: lwkjob
-
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: 李文科
-  email: lwkjob@gmail.com
-  links:
-    # The first element serves as the copyright owner's link
-    - https://github.com/lwkjob
-
-# ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
-
-# Web Analytics Settings
-analytics:
-  google:
-    id: UA-88648048-1
-
-# Prefer color scheme setting.
-theme_mode: 
-
-# the avatar on sidebar, support local or CORS resources
-avatar: "/img/java_duck.jpg"
-
-# boolean type, the global switch for TOC in posts.
-toc: true
-
-comments:
-  provider: disqus
-  disqus:
-    shortname: lwkjob
-
-pwa:
-  enabled: true
-  cache:
-    enabled: true
-
-paginate: 10
-
-# The base URL of your site
-baseurl: ""
-
-# ------------ The following options are not recommended to be modified ------------------
-
-kramdown:
-  footnote_backlink: "&#8617;&#xfe0e;"
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    css_class: highlight
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
-
-collections:
-  tabs:
-    output: true
-    sort_by: order
 
 defaults:
   - scope:
@@ -93,48 +14,3 @@ defaults:
       type: posts
     values:
       layout: post
-      comments: true
-      toc: true
-      permalink: /posts/:title/
-  - scope:
-      path: _drafts
-    values:
-      comments: false
-  - scope:
-      path: ""
-      type: tabs
-    values:
-      layout: page
-      permalink: /:title/
-
-sass:
-  style: compressed
-
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  profile: false
-  blanklines: false
-  ignore:
-    envs: [development]
-
-exclude:
-  - "*.gem"
-  - "*.gemspec"
-  - docs
-  - tools
-  - README.md
-  - LICENSE
-  - purgecss.js
-  - "*.config.js"
-  - "package*.json"
-
-jekyll-archives:
-  enabled: [categories, tags]
-  layouts:
-    category: category
-    tag: tag
-  permalinks:
-    tag: /tags/:name/
-    category: /categories/:name/
