@@ -4,5 +4,36 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+## 关于我
+
+我是**李文科**，Java 菜鸟程序员一只。
+
+### 工作经历
+
+- **2016/12--至今**：......
+- **2016/05--2016.12**：药王科技
+- **2016/02--2016.05**：点融网  
+- **2015/04--2016.02**：地利集团
+- **2013/11--2015.04**：首信易支付
+- **2013/01--2013.11**：国付宝信息科技有限公司
+- **2011/07--2013.01**：欧维特中国
+
+### 技术栈
+
+- 支付系统后台开发
+- 对接银行支付接口
+- Spring, Java, Python
+
+### 个人特点
+
+写代码 玩游戏  
+喜欢耍，恩 是的
+
+### 联系方式
+
+- 邮箱：lwkjob@gmail.com
+- GitHub：[@lwkjob](https://github.com/lwkjob)
+
+---
+
+*最后更新：2026年3月9日*
