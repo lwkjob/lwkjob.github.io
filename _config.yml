@@ -1,0 +1,12 @@
+# Site settings
+title: "野兔很笨"
+description: "野兔的笔记."
+url: "https://lwkjob.github.io"
+
+# Build settings
+plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
+
+# Remote theme
+remote_theme: mmistakes/minimal-mistakes
