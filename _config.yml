@@ -1,5 +1,6 @@
 # Site settings
 title: "野兔很笨"
+email: lwkjob@gmail.com
 description: "野兔的笔记."
 url: "https://lwkjob.github.io"
 
@@ -7,9 +8,11 @@ url: "https://lwkjob.github.io"
 plugins:
   - jekyll-remote-theme
   - jekyll-paginate
+  - jekyll-sitemap
 
 # Remote theme
 remote_theme: cotes2020/jekyll-theme-chirpy
 
-# Chirpy configuration
+# Chirpy specific settings
 theme_mode: light
+search: true
