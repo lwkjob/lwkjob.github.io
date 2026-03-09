@@ -9,4 +9,7 @@ plugins:
   - jekyll-paginate
 
 # Remote theme
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: cotes2020/jekyll-theme-chirpy
+
+# Chirpy configuration
+theme_mode: light
