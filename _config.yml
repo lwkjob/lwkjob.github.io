@@ -55,7 +55,7 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: G-YOUR_MEASUREMENT_ID_HERE # 替换为你的实际 Measurement ID
+    id: G-G8ZTZHYGVS # 你的实际 Measurement ID
   goatcounter:
     id: # fill in your GoatCounter ID
   umami:
