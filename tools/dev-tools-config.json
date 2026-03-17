@@ -1,0 +1,61 @@
+{
+  "development_tools": [
+    {
+      "name": "claude",
+      "description": "Claude Code CLI and related tools",
+      "binary_patterns": ["claude", "anthropic"],
+      "config_patterns": [".claude", "claude", "anthropic"],
+      "package_managers": ["npm", "pip", "brew"]
+    },
+    {
+      "name": "uv",
+      "description": "Python package installer and resolver",
+      "binary_patterns": ["uv", "uvx"],
+      "config_patterns": [".uv", "uv"],
+      "package_managers": ["standalone", "brew"]
+    },
+    {
+      "name": "node",
+      "description": "Node.js runtime and npm",
+      "binary_patterns": ["node", "npm", "npx"],
+      "config_patterns": [".npm", ".node", "node_modules"],
+      "package_managers": ["npm", "brew", "nvm"]
+    },
+    {
+      "name": "python",
+      "description": "Python runtime and pip",
+      "binary_patterns": ["python", "python3", "pip", "pip3"],
+      "config_patterns": [".python", ".pip", "venv", ".venv"],
+      "package_managers": ["pip", "brew", "pyenv"]
+    },
+    {
+      "name": "docker",
+      "description": "Docker container platform",
+      "binary_patterns": ["docker", "docker-compose"],
+      "config_patterns": [".docker", "docker"],
+      "package_managers": ["brew", "standalone"]
+    },
+    {
+      "name": "git",
+      "description": "Git version control system",
+      "binary_patterns": ["git"],
+      "config_patterns": [".gitconfig", ".git", "git"],
+      "package_managers": ["brew", "standalone"]
+    }
+  ],
+  "search_locations": {
+    "binaries": [
+      "/usr/local/bin",
+      "/opt/homebrew/bin",
+      "$HOME/.local/bin",
+      "$HOME/bin",
+      "/usr/bin"
+    ],
+    "configurations": [
+      "$HOME/.config",
+      "$HOME",
+      "$HOME/Library/Application Support",
+      "$HOME/Library/Preferences"
+    ]
+  }
+}
